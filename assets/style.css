@@ -1,0 +1,50 @@
+html  { height:100%; }
+body  { margin:0; padding:0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color:#393D40; line-height: 1.5; height:100%; background-color: #f2f2f2; }
+img   { border:0; }
+p     { margin-bottom:20px; font-size:1.1em; font-weight:200; line-height:1.5;}
+a     { color:#FFF; -webkit-transition:all .2s; }
+a:hover, a:active, a:focus { text-decoration:none; color:#FFF; -webkit-transition:all .6s; text-decoration:underline; }
+blockquote	{ font-style:italic; font-size:95%; margin:0; padding-left:20px;}
+pre     { padding:0; background-color:transparent; border:0; }
+table   { margin-bottom:30px; font-size:90%; }
+th      { background-color:rgba(51,51,51,.1); }
+td      { color:#393D40; }
+hr      { border-top: 3px solid #E5E5E5; }
+dl      { margin:0; }
+
+.text-center { text-align:center; }
+
+.container { position:relative; width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+header { background-color:#FFF; padding:20px 0; }
+h1 { font-family: 'Caveat', cursive; font-size:1.5rem; color:#1B1B1B; margin:0; }   
+.author { font-size: 0.8rem; margin-left: 160px; margin-top: 0;}
+
+.carousel { width:300px; height:250px; margin: 50px auto; overflow:hidden; }
+.l-slides { display:inline-flex; position:relative; padding:0; margin:0; -webkit-transition:all 1.0s ease-in-out; -moz-transition:all 1.0s ease-in-out; -o-transition:all 1.0s ease-in-out; transition:all 1.0s ease-in-out; }
+.l-slides > .slide { display: inline-block; width:300px; height:250px; }
+.l-slides > .slide > img { display: block; margin: 0 auto; }
+
+.slideLeft { position: absolute; top: 50%; left:50px; }
+.slideRight { position: absolute; top: 50%; right:50px; }
+.slideLeft { display:none; }
+.svg-arrow:hover { opacity:0.6; cursor: pointer; }
+
+@media (min-width: 576px) {
+	.container { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+	.container { max-width: 720px; }
+	h1 { font-size:2.5rem; }
+	.carousel { width: 600px; }
+}
+
+@media (min-width: 992px) {
+	.container { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+	.container { max-width: 1140px; }
+	.carousel { width: 900px; }
+}
+
